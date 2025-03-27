@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net8.0</TargetFramework>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>enable</Nullable>
+	<PackageId>SparkNET.DotEnv</PackageId>
+	<Version>1.0.0</Version>
+	<Authors>30decspark</Authors>
+	<RepositoryUrl>https://github.com/30decspark/SparkNET.DotEnv</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>
