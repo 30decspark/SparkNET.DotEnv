@@ -9,4 +9,7 @@ using SparkNET.DotEnv;
 
 // Load
 Env.Load();
+
+// Retrieve
+bool isLock = Env.Get<bool>("ISLOCK", false);
 ```
