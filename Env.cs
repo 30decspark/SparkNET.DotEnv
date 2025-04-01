@@ -9,7 +9,7 @@
             path = string.IsNullOrWhiteSpace(path) ? ".env" : path;
             if (!File.Exists(path))
             {
-                throw new Exception("The .env file not found!");
+                throw new ArgumentException($"The {path} was not found.", nameof(path));
             }
 
             _data = [];
