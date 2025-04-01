@@ -6,7 +6,7 @@
 
         public static void Load(string? path = null)
         {
-            path = string.IsNullOrEmpty(path) ? ".env" : path;
+            path = string.IsNullOrWhiteSpace(path) ? ".env" : path;
             if (!File.Exists(path))
             {
                 throw new Exception("The .env file not found!");
