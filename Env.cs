@@ -4,9 +4,9 @@
     {
         private static Dictionary<string, string> _data = [];
 
-        public static void Load()
+        public static void Load(string? path = null)
         {
-            string path = ".env";
+            path = string.IsNullOrEmpty(path) ? ".env" : path;
             if (!File.Exists(path))
             {
                 throw new Exception("The .env file not found!");
